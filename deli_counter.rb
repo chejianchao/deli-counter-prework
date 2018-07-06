@@ -13,3 +13,7 @@ def line(deli)
   end
   return res
 end
+
+def now_serving(deli)
+  
+end
