@@ -7,6 +7,9 @@ def take_a_number(katz_deli, name)
 end
 
 def line(deli)
+  if deli.size == 0
+    return "The line is currently empty."
+  end
   res = "The line is currently:"
   deli.each_with_index do |name, idx|
     res+=" #{idx+1}. #{name}"
