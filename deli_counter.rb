@@ -18,5 +18,6 @@ def now_serving(deli)
   if deli.size == 0 
     return "There is nobody waiting to be served!"
   end
-  
+  name = deli.pop()
+  "Currently serving #{name}"
 end
