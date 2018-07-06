@@ -7,7 +7,9 @@ def take_a_number(katz_deli, name)
 end
 
 def line(deli)
-  deli.each do |name|
-    
+  res = "The line is currently:"
+  deli.each_with_index do |name, idx|
+    res+=" #{idx+1}. #{name}"
   end
+  return res
 end
